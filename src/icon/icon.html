@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Icon图标</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/highlight/github.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/markdown.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/owller.css">
+</head>
+<body>
+	<div class="markdown-body">
+    
+	</div>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script type="text/javascript" src="/static/js/highlight.js"></script>
+<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/js/owller.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    	var r = false 
+	    $.ajax({
+	    	url: '/md/Icon.md',
+	    	dataType: 'text',
+	    	type: 'get',
+	    	success: function(data) {
+	    		document.getElementsByClassName('markdown-body')[0].innerHTML = marked(data)
+                var owller = new OwllerUI()
+                owller.renders.autoRender()
+	    		$('pre code').each(function(i, block) {
+				    hljs.highlightBlock(block);
+			  	});
+	    	}
+	    })
+	});
+</script>
+</html>
