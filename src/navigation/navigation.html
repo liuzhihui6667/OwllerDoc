@@ -20,92 +20,26 @@
 	</style>
 </head>
 <body>
-	<div class="markdown-body">
+<owl-layout childrenlayout="h">
+	<owl-layout width="250px">
+		<owl-nav itemlist="nav" dir="v"></owl-nav>
+	</owl-layout>
+	<owl-layout width="calc(100% - 250px)" style="padding: 30px;height: 100%;overflow-y: scroll;">
+		<div class="markdown-body">
 
-	</div>
+		</div>
+	</owl-layout>
+</owl-layout>
 </body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script type="text/javascript" src="/static/js/highlight.js"></script>
 <script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="/static/js/owller.js"></script>
+<script type="text/javascript" src="/static/js/common.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
     	var r = false
-	    $.ajax({
-	    	url: '/md/Navigation.md',
-	    	dataType: 'text',
-	    	type: 'get',
-	    	success: function(data) {
-	    		document.getElementsByClassName('markdown-body')[0].innerHTML = marked(data)
-                var owller = new OwllerUI()
-				owller.renders.autoRender()
-	    		$('pre code').each(function(i, block) {
-				    hljs.highlightBlock(block);
-			  	});
-	    	}
-	    })
-	});
-    item = [
-        {
-            text: '一级菜单',
-            active: false,
-            icon: 'dashboard',
-            list: [
-                {
-                    text: '二级菜单',
-                    list: [
-                        {
-                            text: '三级菜单'
-                        },{
-                            text: '三级菜单'
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            text: '一级菜单',
-            active: false,
-            icon: 'store',
-            list: [
-                {
-                    text: '二级菜单',
-                    list: [
-                        {
-                            text: '三级菜单'
-                        },{
-                            text: '三级菜单'
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            text: '一级菜单',
-            active: false,
-            icon: 'setting',
-            list: [
-                {
-                    text: '二级菜单',
-                    list: [
-                        {
-                            text: '三级菜单'
-                        },{
-                            text: '三级菜单'
-                        }
-                    ]
-                },{
-                    text: '二级菜单',
-                    list: [
-                        {
-                            text: '三级菜单'
-                        },{
-                            text: '三级菜单'
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+        getMarkdown('Navigation')
+    });
 </script>
 </html>

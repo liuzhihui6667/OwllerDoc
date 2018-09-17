@@ -20,70 +20,6 @@ Navigation-导航栏提供了多种形式的网站导航组件。
                 </owl-layout>
             </owl-layout>
         </owl-layout>
-        <script>
-        item = [
-            {
-                text: '一级菜单',
-                active: false,
-                icon: 'dashboard',
-                list: [
-                    {
-                        text: '二级菜单',
-                        list: [
-                            {
-                                text: '三级菜单'
-                            },{
-                                text: '三级菜单'
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                text: '一级菜单',
-                active: false,
-                icon: 'store',
-                list: [
-                    {
-                        text: '二级菜单',
-                        list: [
-                            {
-                                text: '三级菜单'
-                            },{
-                                text: '三级菜单'
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                text: '一级菜单',
-                active: false,
-                icon: 'setting',
-                list: [
-                    {
-                        text: '二级菜单',
-                        list: [
-                            {
-                                text: '三级菜单'
-                            },{
-                                text: '三级菜单'
-                            }
-                        ]
-                    },{
-                        text: '二级菜单',
-                        list: [
-                            {
-                                text: '三级菜单'
-                            },{
-                                text: '三级菜单'
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-        </script>
 </div>
 
 > 样例一代码
@@ -110,68 +46,74 @@ Navigation-导航栏提供了多种形式的网站导航组件。
         </owl-layout>
     </owl-layout>
     <script>
-    item = [
-            {
-                text: '一级菜单',
-                active: false,
-                icon: 'dashboard',
-                list: [
-                    {
-                        text: '二级菜单',
-                        list: [
-                            {
-                                text: '三级菜单'
-                            },{
-                                text: '三级菜单'
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                text: '一级菜单',
-                active: false,
-                icon: 'store',
-                list: [
-                    {
-                        text: '二级菜单',
-                        list: [
-                            {
-                                text: '三级菜单'
-                            },{
-                                text: '三级菜单'
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                text: '一级菜单',
-                active: false,
-                icon: 'setting',
-                list: [
-                    {
-                        text: '二级菜单',
-                        list: [
-                            {
-                                text: '三级菜单'
-                            },{
-                                text: '三级菜单'
-                            }
-                        ]
-                    },{
-                        text: '二级菜单',
-                        list: [
-                            {
-                                text: '三级菜单'
-                            },{
-                                text: '三级菜单'
-                            }
-                        ]
-                    }
-                ]
+        new OwllerUI({
+            data: {
+                Nav: {
+                    item: [
+                        {
+                            text: '一级菜单',
+                            active: false,
+                            icon: 'dashboard',
+                            list: [
+                                {
+                                    text: '二级菜单',
+                                    list: [
+                                        {
+                                            text: '三级菜单'
+                                        },{
+                                            text: '三级菜单'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            text: '一级菜单',
+                            active: false,
+                            icon: 'store',
+                            list: [
+                                {
+                                    text: '二级菜单',
+                                    list: [
+                                        {
+                                            text: '三级菜单'
+                                        },{
+                                            text: '三级菜单'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            text: '一级菜单',
+                            active: false,
+                            icon: 'setting',
+                            list: [
+                                {
+                                    text: '二级菜单',
+                                    list: [
+                                        {
+                                            text: '三级菜单'
+                                        },{
+                                            text: '三级菜单'
+                                        }
+                                    ]
+                                },{
+                                    text: '二级菜单',
+                                    list: [
+                                        {
+                                            text: '三级菜单'
+                                        },{
+                                            text: '三级菜单'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
-        ]
+        })
     </script>
 </body>
 </html>
