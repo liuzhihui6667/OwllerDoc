@@ -151,6 +151,7 @@ var cnf = {
                     list: [
                         {
                             text: 'Layout布局',
+                            to: '/layout/layout.html'
                         }
                     ]
                 },
@@ -161,6 +162,7 @@ var cnf = {
                     list: [
                         {
                             text: '导航栏',
+                            to: '/navigation/navigation.html'
                         }
                     ]
                 },
@@ -171,6 +173,7 @@ var cnf = {
                     list: [
                         {
                             text: 'Icon图标',
+                            to: '/icon/icon.html'
                         }
                     ]
                 }
