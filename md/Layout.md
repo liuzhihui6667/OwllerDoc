@@ -12,7 +12,7 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
     	<!-- the Blue Container -->
         <owl-layout height="100px" style="background: dodgerblue;"></owl-layout>
         <!-- the Green Container -->
-        <owl-layout childrenlayout="v" style="background: green;"></owl-layout>
+        <owl-layout height="200px" style="background: green;"></owl-layout>
         <!-- the Orange Container -->
         <owl-layout height="100px" style="background: orange;"></owl-layout>
     </owl-layout>
@@ -32,7 +32,7 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
 		<!-- the Blue Container -->
         <owl-layout height="100px" style="background: dodgerblue;"></owl-layout>
         <!-- the Green Container -->
-        <owl-layout style="background: green;"></owl-layout>
+        <owl-layout height="200px" style="background: green;"></owl-layout>
         <!-- the Orange Container -->
         <owl-layout height="100px" style="background: orange;"></owl-layout>
     </owl-layout>
@@ -43,7 +43,7 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
 > 样例二
 
 <div style="width: 100%;height: 400px;margin-bottom: 16px;">
-    <owl-layout childrenlayout="h" style="background: white;">
+    <owl-layout height="100%" childrenlayout="h" style="background: white;">
     	<!-- the Blue Container -->
         <owl-layout style="background: dodgerblue;"></owl-layout>
         <!-- the Green Container -->
@@ -63,7 +63,7 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
 </head>
 <body>
 	<!-- 整个浏览器窗口或用户自定义元素块 -->
-	<owl-layout childrenlayout="h" style="background: white;">
+	<owl-layout height="100%" childrenlayout="h" style="background: white;">
 		<!-- the Blue Container -->
         <owl-layout style="background: dodgerblue;"></owl-layout>
         <!-- the Green Container -->
@@ -82,7 +82,7 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
     	<!-- the Top Orange Container -->
         <owl-layout height="60px" style="background: orange;"></owl-layout>		
         <!-- the Green and Lightgreen Container -->
-        <owl-layout childrenlayout="h" style="background: yellow;">		
+        <owl-layout height="280px" childrenlayout="h" style="background: yellow;">		
         	<!-- the Green Container -->
             <owl-layout width="300px" style="background: green;"></owl-layout>
             <!-- the Lightgreen Container -->
@@ -107,7 +107,7 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
     	<!-- the Top Orange Container -->
         <owl-layout height="60px" style="background: orange;"></owl-layout>		
         <!-- the Green and Lightgreen Container -->
-        <owl-layout childrenlayout="h" style="background: yellow;">		
+        <owl-layout height="280px" childrenlayout="h" style="background: yellow;">		
         	<!-- the Green Container -->
             <owl-layout width="300px" style="background: green;"></owl-layout>
             <!-- the Lightgreen Container -->
@@ -123,7 +123,7 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
 > 样例四
 
 <div style="width: 100%;height: 400px;margin-bottom: 16px;">
-    <owl-layout childrenlayout="h" style="background: white;">
+    <owl-layout height="100%" childrenlayout="h" style="background: white;">
     	<!-- the Blue Container -->
         <owl-layout width="250px" style="background: dodgerblue;"></owl-layout>
         <!-- the Orange and Green and Lightgreen Container -->
@@ -131,7 +131,7 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
         	<!-- the Top Orange Container -->
             <owl-layout height="60px" style="background: orange;"></owl-layout>		
             <!-- the Green and Lightgreen Container -->
-            <owl-layout childrenlayout="h" style="background: yellow;">		
+            <owl-layout height="280px" childrenlayout="h" style="background: yellow;">		
             	<!-- the Green Container -->
                 <owl-layout style="background: green;"></owl-layout>
                 <!-- the Lightgreen Container -->
@@ -154,7 +154,7 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
 </head>
 <body>
 	<!-- 整个浏览器窗口或用户自定义元素块 -->
-	<owl-layout childrenlayout="h" style="background: white;">
+	<owl-layout height="100%" childrenlayout="h" style="background: white;">
 		<!-- the Blue Container -->
         <owl-layout width="250px" style="background: dodgerblue;"></owl-layout>
         <!-- the Orange and Green and Lightgreen Container -->
@@ -162,7 +162,7 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
         	<!-- the Top Orange Container -->
             <owl-layout height="60px" style="background: orange;"></owl-layout>		
             <!-- the Green and Lightgreen Container -->
-            <owl-layout childrenlayout="h" style="background: yellow;">		
+            <owl-layout height="280px" childrenlayout="h" style="background: yellow;">		
             	<!-- the Green Container -->
                 <owl-layout style="background: green;"></owl-layout>
                 <!-- the Lightgreen Container -->
@@ -196,5 +196,5 @@ Layout是一种常用的网页布局，我们把网页看作是一块画布，�
 |:-------------|:-------------|:----------|:---|
 |	childrenlayout		|	该容器的子容器的排列方式		|	h:水平排列，v:垂直排列	|该值默认为'v',如果没有子容器，则可忽略该属性|
 |	width		|	该容器的宽度		|	"100px", "100%"	|如不设置该属性则与兄弟元素平分宽度，如果自身排列方式为垂直排列则固定为100%，请忽略该属性|
-|	height		|	该容器的高度		|	"100px", "100%"	|如不设置该属性则与兄弟元素平分高度，如果自身排列方式为水平排列则固定为100%，请忽略该属性|
+|	height		|	该容器的高度		|	"100px", "100%"	|如不设置该属性则为自适应auto，如果自身排列方式为水平排列则固定为100%，请忽略该属性|
 

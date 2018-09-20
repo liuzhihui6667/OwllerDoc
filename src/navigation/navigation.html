@@ -10,8 +10,11 @@
 	<style>
 		.exam-wrapper {
 			width: 100%;
-			height: 500px;
+			height: 600px;
+			overflow-x: auto;
 			margin-bottom: 16px;
+			background-color: #ddd;
+			border: 1px solid #ddd;
 		}
 		.exam-wrapper ul, .exam-wrapper li+li {
 			margin: 0;
@@ -20,14 +23,20 @@
 	</style>
 </head>
 <body>
-<owl-layout childrenlayout="h">
-	<owl-layout width="250px">
-		<owl-nav itemlist="nav" dir="v" onlyone></owl-nav>
+<owl-layout childrenlayout="v">
+	<owl-layout height="60px">
+		Owller UI is developing...
 	</owl-layout>
-	<owl-layout width="calc(100% - 250px)" style="padding: 30px;height: 100%;overflow-y: scroll;">
-		<div class="markdown-body">
+	<owl-layout height="15px" style="background-color: #eeeeee;"></owl-layout>
+	<owl-layout childrenlayout="h">
+		<owl-layout width="250px">
+			<owl-nav itemlist="nav" dir="v" menu></owl-nav>
+		</owl-layout>
+		<owl-layout width="calc(100% - 500px)" style="height: 100%;">
+			<div class="markdown-body">
 
-		</div>
+			</div>
+		</owl-layout>
 	</owl-layout>
 </owl-layout>
 </body>

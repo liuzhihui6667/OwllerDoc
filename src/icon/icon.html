@@ -7,16 +7,53 @@
 	<link rel="stylesheet" type="text/css" href="/static/css/markdown.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/common.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/owller.css">
+	<style>
+		.icon-exam-container {
+			width: 100%;
+			overflow-x: auto;
+			margin-bottom: 16px;
+			background-color: #eaecef;
+			border: 1px solid #eaecef;
+			padding: 20px;
+		}
+		.icon-wrapper {
+			width: 110px;
+			height: 100px;
+			position: relative;
+			float: left;
+		}
+		.icon-exam {
+			width: 24px !important;
+			height: 24px !important;
+			position: absolute;
+			top: 10px;
+			left: calc(50% - 12px);
+		}
+		.icon-text {
+			position: absolute;
+			top: 50px;
+			width: 100%;
+			text-align: center;
+			font-size: 14px;
+			color: #5c6b77;
+		}
+	</style>
 </head>
 <body>
-<owl-layout childrenlayout="h">
-	<owl-layout width="250px">
-		<owl-nav itemlist="nav" dir="v" onlyone></owl-nav>
+<owl-layout childrenlayout="v">
+	<owl-layout height="60px">
+		Owller UI is developing...
 	</owl-layout>
-	<owl-layout width="calc(100% - 250px)" style="padding: 30px;height: 100%;overflow-y: scroll;">
-		<div class="markdown-body">
+	<owl-layout height="15px" style="background-color: #eeeeee;"></owl-layout>
+	<owl-layout childrenlayout="h">
+		<owl-layout width="250px">
+			<owl-nav itemlist="nav" dir="v" menu></owl-nav>
+		</owl-layout>
+		<owl-layout width="calc(100% - 500px)" style="height: 100%;">
+			<div class="markdown-body">
 
-		</div>
+			</div>
+		</owl-layout>
 	</owl-layout>
 </owl-layout>
 </body>
