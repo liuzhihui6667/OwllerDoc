@@ -30,7 +30,8 @@ var cnf = {
                         },{
                             text: '二级菜单'
                         },{
-                            text: '二级菜单'
+                            text: '二级菜单',
+                            active: true
                         }
                     ]
                 },
