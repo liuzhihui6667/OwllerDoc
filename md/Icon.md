@@ -58,6 +58,26 @@ Icon组件提供一套通用的图标，可以很方便的使用。
     	<p class="icon-text">tips</p>
     </div>
     <div class="icon-wrapper">
+    	<owl-icon name="file" class="icon-exam" color="#5c6b77"></owl-icon>
+    	<p class="icon-text">file</p>
+    </div>
+    <div class="icon-wrapper">
+    	<owl-icon name="note" class="icon-exam" color="#5c6b77"></owl-icon>
+    	<p class="icon-text">note</p>
+    </div>
+    <div class="icon-wrapper">
+    	<owl-icon name="linearChart" class="icon-exam" color="#5c6b77"></owl-icon>
+    	<p class="icon-text">linearChart</p>
+    </div>
+    <div class="icon-wrapper">
+    	<owl-icon name="barChart" class="icon-exam" color="#5c6b77"></owl-icon>
+    	<p class="icon-text">barChart</p>
+    </div>
+    <div class="icon-wrapper">
+    	<owl-icon name="pieChart" class="icon-exam" color="#5c6b77"></owl-icon>
+    	<p class="icon-text">pieChart</p>
+    </div>
+    <div class="icon-wrapper">
     	<owl-icon name="left" class="icon-exam" color="#5c6b77"></owl-icon>
     	<p class="icon-text">left</p>
     </div>

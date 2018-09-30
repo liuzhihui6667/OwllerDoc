@@ -126,6 +126,26 @@ var cnf = {
             ],
             nav: [
                 {
+                    text: '基础',
+                    active: false,
+                    list: [
+                        {
+                            text: 'Icon图标',
+                            icon: 'coins',
+                            to: '/icon/icon.html'
+                        },{
+                            text: '按钮',
+                            icon: 'button',
+                        },{
+                            text: '提示器',
+                            icon: 'tips',
+                        },{
+                            text: '弹出框',
+                            icon: 'popup',
+                        }
+                    ]
+                },
+                {
                     text: '布局',
                     active: false,
                     list: [
@@ -158,22 +178,18 @@ var cnf = {
                     ]
                 },
                 {
-                    text: '其他',
+                    text: '图表',
                     active: false,
                     list: [
                         {
-                            text: 'Icon图标',
-                            icon: 'coins',
-                            to: '/icon/icon.html'
+                            text: '柱状图',
+                            icon: 'barChart',
                         },{
-                            text: '按钮',
-                            icon: 'button',
+                            text: '线形图',
+                            icon: 'linearChart',
                         },{
-                            text: '提示器',
-                            icon: 'tips',
-                        },{
-                            text: '弹出框',
-                            icon: 'popup',
+                            text: '饼状图',
+                            icon: 'pieChart',
                         }
                     ]
                 }
