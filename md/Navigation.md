@@ -7,19 +7,68 @@ Navigation-导航栏提供了多种形式的网站导航组件。
 > 样例一
 
 <div class="exam-wrapper">
-    <owl-layout childrenlayout="v">
-        <owl-layout childrenlayout="h" style="padding: 30px;min-width: 870px;">
-            <owl-layout width="250px">
-                 <owl-nav dir="v" itemlist="item" theme="dark" showall></owl-nav>
-            </owl-layout>
-            <owl-layout width="250px" style="margin-left: 30px">
-                 <owl-nav dir="v" itemlist="item" theme="light" onlyone></owl-nav>
-            </owl-layout>
-            <owl-layout width="250px" style="margin-left: 30px">
-                 <owl-nav dir="v" itemlist="item" theme="lighter" menu></owl-nav>
-            </owl-layout>
-        </owl-layout>
-    </owl-layout>
+    <owl-nav theme="lighter" menu="true" itemheight="43" fit="true">
+    	<owl-nav-item>
+    		<owl-nav-text>入门</owl-nav-text>
+    		<owl-nav-item>
+    			<owl-nav-text>简介</owl-nav-text>
+    		</owl-nav-item>
+    		<owl-nav-item>
+    			<owl-nav-text>安装</owl-nav-text>
+    		</owl-nav-item>
+    		<owl-nav-item>
+    			<owl-nav-text>约定</owl-nav-text>
+    		</owl-nav-item>
+    	</owl-nav-item>
+    	<owl-nav-item>
+    		<owl-nav-text>基础</owl-nav-text>
+    		<owl-nav-item icon="coins">
+    			<owl-nav-text>图标</owl-nav-text>
+    		</owl-nav-item>
+    		<owl-nav-item icon="button">
+    			<owl-nav-text>按钮</owl-nav-text>
+    		</owl-nav-item>
+    		<owl-nav-item icon="tips">
+    			<owl-nav-text>提示器</owl-nav-text>
+    		</owl-nav-item>
+    		<owl-nav-item icon="popup">
+    			<owl-nav-text>弹出层</owl-nav-text>
+    		</owl-nav-item>
+    	</owl-nav-item>
+    	<owl-nav-item>
+    		<owl-nav-text>布局</owl-nav-text>
+    		<owl-nav-item icon="layout">
+    			<owl-nav-text>Layout</owl-nav-text>
+    		</owl-nav-item>
+    	</owl-nav-item>
+    	<owl-nav-item>
+    		<owl-nav-text>组件</owl-nav-text>
+    		<owl-nav-item icon="store" active="true">
+    			<owl-nav-text>导航栏</owl-nav-text>
+    		</owl-nav-item>
+    		<owl-nav-item icon="popup">
+    			<owl-nav-text>跑马灯</owl-nav-text>
+    		</owl-nav-item>
+    		<owl-nav-item icon="page">
+    			<owl-nav-text>分页器</owl-nav-text>
+    		</owl-nav-item>
+    		<owl-nav-item icon="tree">
+    			<owl-nav-text>树状图</owl-nav-text>
+    		</owl-nav-item>
+    	</owl-nav-item>
+    	<owl-nav-item>
+    		<owl-nav-text>图表</owl-nav-text>
+    		<owl-nav-item icon="barChart">
+    			<owl-nav-text>柱状图</owl-nav-text>
+    		</owl-nav-item>
+    		<owl-nav-item icon="linearChart">
+    			<owl-nav-text>折线图</owl-nav-text>
+    		</owl-nav-item>
+    		<owl-nav-item icon="pieChart">
+    			<owl-nav-text>饼图</owl-nav-text>
+    		</owl-nav-item>
+    	</owl-nav-item>
+    </owl-nav>
 </div>
 
 > 样例一代码

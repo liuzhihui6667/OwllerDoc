@@ -5,9 +5,7 @@ function getMarkdown(name) {
         dataType: 'text',
         type: 'get',
         success: function(data) {
-            document.getElementsByClassName('markdown-body')[0].innerHTML = marked(data)
-            var owller = new OwllerUI(cnf)
-            owller.renders.autoRender()
+            document.getElementsByClassName('md-container')[0].innerHTML = marked(data)
             $('pre code').each(function(i, block) {
                 hljs.highlightBlock(block);
             });
@@ -198,4 +196,4 @@ var cnf = {
     }
 }
 
-var owller = new OwllerUI(cnf)
+// var owller = new OwllerUI(cnf);
