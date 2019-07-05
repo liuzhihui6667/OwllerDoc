@@ -297,6 +297,7 @@
 
 .markdown-body blockquote {
   margin: 0;
+
 }
 
 .markdown-body ul,
@@ -424,6 +425,7 @@
   padding: 0 1em;
   color: #6a737d;
   border-left: 0.25em solid #dfe2e5;
+  font-style: oblique;
 }
 
 .markdown-body blockquote>:first-child {
@@ -558,10 +560,13 @@
   display: table;
   width: 100%;
   overflow: auto;
+  font-size: 11px;
 }
 
 .markdown-body table th {
-  font-weight: 600;
+  font-weight: 500;
+  background-color: #f6f8fa;
+  padding: 10px 13px !important;
 }
 
 .markdown-body table th,
@@ -576,7 +581,7 @@
 }
 
 .markdown-body table tr:nth-child(2n) {
-  background-color: #f6f8fa;
+
 }
 
 .markdown-body img {
