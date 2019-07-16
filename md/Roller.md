@@ -13,27 +13,24 @@ Roller-跑马灯组件提供了常见的跑马灯、轮播功能。
             line-height: 250px;
             text-align: center;
         }
+        .roller-item-img {
+            width: 100%;
+        }
         </style>
         <div class="exam-roller-wrapper">
             <div style="margin: auto; width: 500px;">
                 <owl-roller>
-                    <div style="background-color: red;" class="roller-item">
-                        1
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Hanamichi.jpg" class="roller-item-img">
                     </div>
-                    <div style="background-color: orange;" class="roller-item">
-                        2
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Slamdunk01.jpg" class="roller-item-img">
                     </div>
-                    <div style="background-color: green;" class="roller-item">
-                        3
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Slamdunk02.jpg" class="roller-item-img">
                     </div>
-                    <div style="background-color: blue;" class="roller-item">
-                        4
-                    </div>
-                    <div style="background-color: gold;" class="roller-item">
-                        5
-                    </div>
-                    <div style="background-color: brown;" class="roller-item">
-                        6
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Hanamichi01.jpg" class="roller-item-img">
                     </div>
                 </owl-roller>
             </div>
@@ -43,23 +40,17 @@ Roller-跑马灯组件提供了常见的跑马灯、轮播功能。
     <div class="exam-code-wrapper">
        
        <owl-roller>
-           <div style="background-color: red;">
-               1
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Hanamichi.jpg" class="roller-item-img">
            </div>
-           <div style="background-color: orange;">
-               2
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Slamdunk01.jpg" class="roller-item-img">
            </div>
-           <div style="background-color: green;">
-               3
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Slamdunk02.jpg" class="roller-item-img">
            </div>
-           <div style="background-color: blue;">
-               4
-           </div>
-           <div style="background-color: gold;">
-               5
-           </div>
-           <div style="background-color: brown;">
-               6
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Hanamichi01.jpg" class="roller-item-img">
            </div>
        </owl-roller>
         
@@ -80,23 +71,17 @@ Roller-跑马灯组件提供了常见的跑马灯、轮播功能。
         <div class="exam-roller-wrapper">
             <div style="margin: auto; width: 650px;">
                 <owl-roller value="2" loop="true" auto="true" tip="dot" height="300" width="650">
-                    <div style="background-color: red;" class="roller-item">
-                        1
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Hanamichi.jpg" class="roller-item-img">
                     </div>
-                    <div style="background-color: orange;" class="roller-item">
-                        2
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Slamdunk01.jpg" class="roller-item-img">
                     </div>
-                    <div style="background-color: green;" class="roller-item">
-                        3
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Slamdunk02.jpg" class="roller-item-img">
                     </div>
-                    <div style="background-color: blue;" class="roller-item">
-                        4
-                    </div>
-                    <div style="background-color: gold;" class="roller-item">
-                        5
-                    </div>
-                    <div style="background-color: brown;" class="roller-item">
-                        6
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Hanamichi01.jpg" class="roller-item-img">
                     </div>
                 </owl-roller>
             </div>
@@ -106,23 +91,17 @@ Roller-跑马灯组件提供了常见的跑马灯、轮播功能。
     <div class="exam-code-wrapper">
        
        <owl-roller value="2" loop="true" auto="true" tip="dot" height="300" width="650">
-           <div style="background-color: red;" class="roller-item">
-               1
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Hanamichi.jpg" class="roller-item-img">
            </div>
-           <div style="background-color: orange;" class="roller-item">
-               2
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Slamdunk01.jpg" class="roller-item-img">
            </div>
-           <div style="background-color: green;" class="roller-item">
-               3
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Slamdunk02.jpg" class="roller-item-img">
            </div>
-           <div style="background-color: blue;" class="roller-item">
-               4
-           </div>
-           <div style="background-color: gold;" class="roller-item">
-               5
-           </div>
-           <div style="background-color: brown;" class="roller-item">
-               6
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Hanamichi01.jpg" class="roller-item-img">
            </div>
        </owl-roller>
         
@@ -140,26 +119,20 @@ Roller-跑马灯组件提供了常见的跑马灯、轮播功能。
             text-align: center;
         }
         </style>
-        <div class="exam-roller-wrapper">
+        <div class="exam-roller-wrapper" style="white-space: initial;">
             <div style="margin: auto; width: 650px;">
-                <owl-roller dir="v" loop="true" height="300" width="650" tip="line">
-                    <div style="background-color: red;" class="roller-item">
-                        1
+                <owl-roller dir="v" value="1" loop="true" height="300" width="650" tip="line">
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Hanamichi.jpg" class="roller-item-img">
                     </div>
-                    <div style="background-color: orange;" class="roller-item">
-                        2
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Slamdunk01.jpg" class="roller-item-img">
                     </div>
-                    <div style="background-color: green;" class="roller-item">
-                        3
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Slamdunk02.jpg" class="roller-item-img">
                     </div>
-                    <div style="background-color: blue;" class="roller-item">
-                        4
-                    </div>
-                    <div style="background-color: gold;" class="roller-item">
-                        5
-                    </div>
-                    <div style="background-color: brown;" class="roller-item">
-                        6
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/Hanamichi01.jpg" class="roller-item-img">
                     </div>
                 </owl-roller>
             </div>
@@ -169,23 +142,17 @@ Roller-跑马灯组件提供了常见的跑马灯、轮播功能。
     <div class="exam-code-wrapper">
        
        <owl-roller dir="v" loop="true" height="300" width="650" tip="line">
-           <div style="background-color: red;" class="roller-item">
-               1
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Hanamichi.jpg" class="roller-item-img">
            </div>
-           <div style="background-color: orange;" class="roller-item">
-               2
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Slamdunk01.jpg" class="roller-item-img">
            </div>
-           <div style="background-color: green;" class="roller-item">
-               3
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Slamdunk02.jpg" class="roller-item-img">
            </div>
-           <div style="background-color: blue;" class="roller-item">
-               4
-           </div>
-           <div style="background-color: gold;" class="roller-item">
-               5
-           </div>
-           <div style="background-color: brown;" class="roller-item">
-               6
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/Hanamichi01.jpg" class="roller-item-img">
            </div>
        </owl-roller>
         
@@ -203,27 +170,27 @@ Roller-跑马灯组件提供了常见的跑马灯、轮播功能。
             line-height: 300px;
             text-align: center;
         }
+        .roller-item-img-v {
+            width: 100%;
+        }
         </style>
         <div class="exam-roller-wrapper">
             <div style="margin: auto; width: 650px;">
-                <owl-roller value="3" loop="true" height="300" width="650" tip="line" shownum="3">
-                    <div style="background-color: red;" class="roller-item">
-                        1
+                <owl-roller value="2" loop="true" height="325" width="650" tip="line" shownum="3">
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/sd01.jpg" class="roller-item-img-v">
                     </div>
-                    <div style="background-color: orange;" class="roller-item">
-                        2
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/sd02.jpg" class="roller-item-img-v">
                     </div>
-                    <div style="background-color: green;" class="roller-item">
-                        3
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/sd03.jpg" class="roller-item-img-v">
                     </div>
-                    <div style="background-color: blue;" class="roller-item">
-                        4
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/sd04.jpg" class="roller-item-img-v">
                     </div>
-                    <div style="background-color: gold;" class="roller-item">
-                        5
-                    </div>
-                    <div style="background-color: brown;" class="roller-item">
-                        6
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/sd05.jpg" class="roller-item-img-v">
                     </div>
                 </owl-roller>
             </div>
@@ -232,24 +199,21 @@ Roller-跑马灯组件提供了常见的跑马灯、轮播功能。
     <div class="exam-line"></div>
     <div class="exam-code-wrapper">
        
-       <owl-roller value="3" loop="true" height="300" width="650" tip="line" shownum="3">
-           <div style="background-color: red;" class="roller-item">
-               1
+       <owl-roller value="2" loop="true" height="300" width="650" tip="line" shownum="3">
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/sd01.jpg" class="roller-item-img-v">
            </div>
-           <div style="background-color: orange;" class="roller-item">
-               2
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/sd02.jpg" class="roller-item-img-v">
            </div>
-           <div style="background-color: green;" class="roller-item">
-               3
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/sd03.jpg" class="roller-item-img-v">
            </div>
-           <div style="background-color: blue;" class="roller-item">
-               4
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/sd04.jpg" class="roller-item-img-v">
            </div>
-           <div style="background-color: gold;" class="roller-item">
-               5
-           </div>
-           <div style="background-color: brown;" class="roller-item">
-               6
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/sd05.jpg" class="roller-item-img-v">
            </div>
        </owl-roller>
         
@@ -270,23 +234,20 @@ Roller-跑马灯组件提供了常见的跑马灯、轮播功能。
         <div class="exam-roller-wrapper" style="height: 100%;">
             <div class="fit" style="margin: auto;height: 100%;">
                 <owl-roller value="3" loop="true" fit="true" tip="line" shownum="3">
-                    <div style="background-color: red;" class="roller-item">
-                        1
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/sd01.jpg" class="roller-item-img-v">
                     </div>
-                    <div style="background-color: orange;" class="roller-item">
-                        2
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/sd02.jpg" class="roller-item-img-v">
                     </div>
-                    <div style="background-color: green;" class="roller-item">
-                        3
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/sd03.jpg" class="roller-item-img-v">
                     </div>
-                    <div style="background-color: blue;" class="roller-item">
-                        4
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/sd04.jpg" class="roller-item-img-v">
                     </div>
-                    <div style="background-color: gold;" class="roller-item">
-                        5
-                    </div>
-                    <div style="background-color: brown;" class="roller-item">
-                        6
+                    <div class="roller-item">
+                        <img src="/static/image/slamdunk/sd05.jpg" class="roller-item-img-v">
                     </div>
                 </owl-roller>
             </div>
@@ -296,23 +257,20 @@ Roller-跑马灯组件提供了常见的跑马灯、轮播功能。
     <div class="exam-code-wrapper">
        
        <owl-roller value="3" loop="true" fit="true" tip="line" shownum="3">
-           <div style="background-color: red;" class="roller-item">
-               1
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/sd01.jpg" class="roller-item-img-v">
            </div>
-           <div style="background-color: orange;" class="roller-item">
-               2
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/sd02.jpg" class="roller-item-img-v">
            </div>
-           <div style="background-color: green;" class="roller-item">
-               3
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/sd03.jpg" class="roller-item-img-v">
            </div>
-           <div style="background-color: blue;" class="roller-item">
-               4
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/sd04.jpg" class="roller-item-img-v">
            </div>
-           <div style="background-color: gold;" class="roller-item">
-               5
-           </div>
-           <div style="background-color: brown;" class="roller-item">
-               6
+           <div class="roller-item">
+               <img src="/static/image/slamdunk/sd05.jpg" class="roller-item-img-v">
            </div>
        </owl-roller>
         

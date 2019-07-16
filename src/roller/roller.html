@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Navigation-导航栏</title>
+	<title>Roller-跑马灯</title>
 	<link rel="stylesheet" type="text/css" href="/static/css/highlight-custom.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/markdown.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/common.css">
@@ -92,7 +92,17 @@
 <script type="text/javascript" src="/static/js/common.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        getMarkdown('Roller')
+        let md = getMarkdown('Roller');
+		let owller = new OwllerUI.OwllerUI({
+			methods: {
+				titleTip: function () {},
+				tipShow: function () {}
+			}
+		});
+        md.then((res) => {
+			markToHtml(res);
+			owller.render();
+		})
     });
 </script>
 </html>

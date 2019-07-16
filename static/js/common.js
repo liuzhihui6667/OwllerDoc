@@ -1,18 +1,21 @@
 function getMarkdown(name) {
-    var url = '/md/'+name+'.md'
-    $.ajax({
+    var url = '/md/'+name+'.md';
+    return $.ajax({
         url: url,
         dataType: 'text',
         type: 'get',
         success: function(data) {
-            document.getElementsByClassName('md-container')[0].innerHTML = marked(data);
-            new OwllerUI.OwllerUI();
-            $('pre code').each(function(i, block) {
-                hljs.highlightBlock(block);
-            });
-            mdEventBind();
+            return data;
         }
     })
+}
+
+function markToHtml(data) {
+    document.getElementsByClassName('md-container')[0].innerHTML = marked(data);
+    $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
+    mdEventBind();
 }
 
 function mdEventBind() {
