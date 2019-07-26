@@ -27,11 +27,6 @@ Tips - 提示器组建提供了常见的内容提示，支持自定义。
                         <img src="/static/image/slamdunk/Hanamichi01.jpg" alt="" class="title-tip-img">
                     </div>
                 </owl-tip-content>
-                <owl-tip-custom-content>
-                    <div style="background-color: #fff;width: 420px;height: 150px;">
-                        woshi yige 这是一个提示框这是一个提示框这是一个提示框
-                    </div>
-                </owl-tip-custom-content>
                 <owl-tip-title>
                     樱木花道
                 </owl-tip-title>
